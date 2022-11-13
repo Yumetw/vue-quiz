@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <GameForm/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import GameForm from "@/components/GameForm";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    GameForm,
+  },
 }
 </script>
 
 <style>
+body {
+  margin: 0;
+  background: radial-gradient(40% 50%, #5b85aa, #414770);;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 500px;
+  border-radius: 30px;
+  padding: 40px;
+  background-color: #fff;
+  position: relative;
 }
 </style>
